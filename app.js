@@ -76,7 +76,7 @@ document.getElementById('book-form').addEventListener('submit', function(e){
     const ui = new UI();
 
     //Validate 
-    if(title == '' || author === '' || isbn === ''){
+    if(title === '' || author === '' || isbn === ''){
         //Error alert
         ui.showAlert('Please, fill in all fields', 'error');
     }else{
@@ -106,4 +106,4 @@ document.getElementById('book-list').addEventListener('click', function(e){
     ui.showAlert('Book Removed!', 'success');
     
     e.preventDefault();
-})
+});
